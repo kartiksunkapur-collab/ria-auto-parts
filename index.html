@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="RIA Auto Parts — quality car parts, body parts and accessories.">
+  <title>RIA Auto Parts | Quality Parts. Reliable Performance.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="topbar">
+    <span>QUALITY PARTS. RELIABLE PERFORMANCE.</span>
+    <a href="tel:+918971973781">☎ +91 8971973781</a>
+  </div>
+
+  <header class="header">
+    <a class="brand" href="#home" aria-label="RIA Auto Parts home">
+      <span class="brand-mark"><span>R</span><b>I</b><span>A</span><i>⚙</i></span>
+      <span><strong>RIA</strong><small>AUTO PARTS</small></span>
+    </a>
+    <form class="search" id="searchForm">
+      <input id="searchInput" type="search" placeholder="Search car parts, body parts & accessories">
+      <button aria-label="Search">⌕</button>
+    </form>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#shop">Car Parts</a>
+      <a href="#shop">Body Parts</a>
+      <a href="#shop">Accessories</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a href="#contact">My Account</a>
+      <button class="cart-button" id="cartButton">🛒 <span>My Cart</span><b id="cartCount">0</b></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow">ALL CAR AUTOMOBILE PARTS & BODY PARTS</div>
+        <h1>QUALITY PARTS.<br><em>RELIABLE</em> PERFORMANCE.</h1>
+        <p>Shop dependable automotive parts and accessories with a straightforward buying experience built for everyday drivers and workshops.</p>
+        <div class="hero-buttons">
+          <a class="btn primary" href="#shop">SHOP CAR PARTS →</a>
+          <a class="btn ghost" href="#shop">SHOP BODY PARTS →</a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="glow"></div>
+        <div class="car-silhouette">RIA</div>
+        <div class="part-ring">
+          <span>⚙</span><span>◉</span><span>🔧</span><span>◈</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="fitment">
+      <div class="fitment-title">FIND PARTS FOR YOUR CAR</div>
+      <div class="selects">
+        <label>🚘 <select id="make"><option value="">Select Make</option><option>Maruti Suzuki</option><option>Hyundai</option><option>Tata</option><option>Mahindra</option><option>Honda</option><option>Toyota</option><option>Volkswagen</option></select></label>
+        <label>🚗 <select id="model"><option value="">Select Model</option><option>Swift</option><option>Baleno</option><option>Creta</option><option>Nexon</option><option>Thar</option><option>Verna</option><option>Dzire</option></select></label>
+        <label>📅 <select id="year"><option value="">Select Year</option><option>2026</option><option>2025</option><option>2024</option><option>2023</option><option>2022</option></select></label>
+        <button class="btn primary" id="findParts">FIND PARTS →</button>
+      </div>
+      <div id="fitmentMessage" class="fitment-message"></div>
+    </section>
+
+    <section class="section" id="shop">
+      <div class="section-head">
+        <div><span class="eyebrow">SHOP BY CATEGORY</span><h2>CAR PARTS & ACCESSORIES</h2></div>
+        <button class="text-button" id="clearFilters">VIEW ALL →</button>
+      </div>
+      <div class="categories" id="categoryGrid"></div>
+    </section>
+
+    <section class="section dark-section">
+      <div class="section-head">
+        <div><span class="eyebrow">BEST SELLERS</span><h2>FEATURED PRODUCTS</h2></div>
+        <div class="filters">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="engine">Engine</button>
+          <button class="filter" data-filter="brakes">Brakes</button>
+          <button class="filter" data-filter="service">Service</button>
+        </div>
+      </div>
+      <div class="products" id="productGrid"></div>
+    </section>
+
+    <section class="trust">
+      <div><span>◈</span><strong>GENUINE QUALITY</strong><small>Reliable parts for everyday use</small></div>
+      <div><span>▣</span><strong>WIDE RANGE</strong><small>Parts for popular car models</small></div>
+      <div><span>➤</span><strong>FAST DELIVERY</strong><small>Quick and secure dispatch</small></div>
+      <div><span>♧</span><strong>EXPERT SUPPORT</strong><small>Call us for part assistance</small></div>
+    </section>
+
+    <section class="about section" id="about">
+      <div>
+        <span class="eyebrow">ABOUT RIA AUTO PARTS</span>
+        <h2>BUILT AROUND THE RIGHT PART.</h2>
+      </div>
+      <p>RIA Auto Parts is positioned as a practical online destination for car parts, body parts and accessories. The store is designed to make it easy to find a product, check compatibility and place an order from any device.</p>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="contact-card">
+        <span class="eyebrow">NEED HELP?</span>
+        <h2>LET'S FIND THE RIGHT PART.</h2>
+        <p>Call RIA Auto Parts for product availability, compatibility questions or order assistance.</p>
+        <div class="contact-buttons">
+          <a class="btn primary" href="tel:+918971973781">CALL +91 8971973781</a>
+          <a class="btn ghost" href="https://wa.me/918971973781" target="_blank" rel="noopener">WHATSAPP US</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand">
+      <div class="brand">
+        <span class="brand-mark"><span>R</span><b>I</b><span>A</span><i>⚙</i></span>
+        <span><strong>RIA</strong><small>AUTO PARTS</small></span>
+      </div>
+      <p>Quality Parts, Reliable Performance.</p>
+      <a href="tel:+918971973781">+91 8971973781</a>
+    </div>
+    <div><h4>QUICK LINKS</h4><a href="#home">Home</a><a href="#shop">Car Parts</a><a href="#shop">Body Parts</a><a href="#shop">Accessories</a></div>
+    <div><h4>CUSTOMER SERVICE</h4><a href="#contact">My Account</a><a href="#contact">Order Tracking</a><a href="#contact">Returns & Refunds</a><a href="#contact">Shipping Policy</a></div>
+    <div><h4>CONTACT</h4><p>RIA Auto Parts</p><p>India</p><a href="tel:+918971973781">+91 8971973781</a></div>
+  </footer>
+  <div class="copyright">© <span id="yearNow"></span> RIA Auto Parts. All rights reserved.</div>
+
+  <div class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="drawer-head"><h3>YOUR CART</h3><button id="closeCart">✕</button></div>
+    <div id="cartItems"></div>
+    <div class="cart-total"><span>Subtotal</span><strong id="cartTotal">₹0</strong></div>
+    <button class="btn primary checkout" id="checkout">PROCEED TO CHECKOUT →</button>
+    <small class="cart-note">Payments and database can be connected in the next deployment phase.</small>
+  </div>
+  <div class="overlay" id="overlay"></div>
+  <script src="app.js"></script>
+</body>
+</html>
